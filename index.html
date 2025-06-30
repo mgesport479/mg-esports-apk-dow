@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Zone - Download The App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- SwiperJS CSS for Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        :root {
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #3a8dff;
+        }
+
+        /* Basic Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #f0f0f0;
+            background-color: #0a0a10; /* Fallback color */
+            min-height: 100vh;
+            text-align: center;
+            line-height: 1.6;
+            position: relative; /* Needed for the pseudo-element */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        
+        /* Background Image with Dark Overlay Effect */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Your image link here */
+            background: url('https://i.postimg.cc/bvgR8dJg/IMG-20250630-144314-468.jpg') no-repeat center center/cover;
+            filter: blur(6px) brightness(0.35); /* Blur and darken the background */
+            z-index: -1; /* Place it behind all content */
+            transform: scale(1.1); /* To avoid hard edges from blur */
+        }
+
+        .main-container {
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 20px;
+            z-index: 1;
+        }
+
+        /* App Title Style */
+        .app-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #FFD700; /* Gold color */
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+        
+        /* Slider with "Frosted Glass" Effect */
+        .swiper-container {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto 35px auto;
+            /* Glassmorphism Effect */
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 20px 0;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            max-width: 180px; /* Adjust size of phone mockup */
+            height: auto;
+            border-radius: 12px;
+        }
+
+        /* The Blue Download Button */
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #3a8dff, #0a5fff); /* Vibrant Blue Gradient */
+            color: #ffffff;
+            padding: 18px 45px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 5px 20px rgba(58, 141, 255, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px; /* Space between button and description */
+        }
+
+        .download-btn:hover, .download-btn:focus {
+            transform: translateY(-3px); /* Lifts the button on hover */
+            box-shadow: 0 8px 25px rgba(58, 141, 255, 0.7);
+        }
+
+        /* Description Section */
+        .description-area {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .description-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2ECC71; /* Green color */
+            margin-bottom: 10px;
+        }
+
+        .description-text {
+            font-size: 0.95rem;
+            color: #ddd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .app-title {
+                font-size: 2.8rem;
+            }
+            .description-title {
+                font-size: 1.5rem;
+            }
+            .download-btn {
+                padding: 15px 40px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <h1 class="app-title">Tournament Zone</h1>
+
+        <!-- Slider with Glass Effect -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://i.postimg.cc/cLN7M5rr/IMG-20250630-144314-935.jpg" alt="App Screenshot 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.postimg.cc/bvgR8dJg/IMG-20250630-144314-468.jpg" alt="App Screenshot 2">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- Download Button -->
+        <a href="https://drive.google.com/file/d/19DPH_dNkEhoHazIoRvOaFLbfKrRYFaA_/view?usp=drivesdk" class="download-btn">
+            Download Now (APK)
+        </a>
+
+        <!-- Description Area -->
+        <div class="description-area">
+            <h2 class="description-title">Join The Ultimate Gaming Arena</h2>
+            <p class="description-text">
+                Get ready for an unparalleled gaming experience! Our app brings you the latest esports tournaments, live match updates, and exclusive chances to win big prizes. Download now to register for tournaments and compete with the best!
+            </p>
+        </div>
+
+    </div>
+
+    <!-- SwiperJS for Slider functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+</body>
+</html>
